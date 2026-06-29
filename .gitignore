@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+.vscode/
+*.log
+.env
+apps/api/.env
+apps/web/.env
