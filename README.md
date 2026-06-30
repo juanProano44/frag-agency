@@ -45,8 +45,8 @@ npm run dev
 La consola imprime las URLs de arranque:
 
 - Frontend: http://localhost:5173
-- Backend: http://localhost:3000/api
-- Swagger: http://localhost:3000/frag-api-mailing
+- Backend: http://localhost:8080/api
+- Swagger: http://localhost:8080/frag-api-mailing
 
 Levantar solo backend:
 
@@ -62,7 +62,7 @@ npm run dev:frontend
 
 El frontend se sirve en http://localhost:5173.
 
-El backend expone la API en http://localhost:3000/api y Swagger en http://localhost:3000/frag-api-mailing.
+El backend expone la API en http://localhost:8080/api y Swagger en http://localhost:8080/frag-api-mailing.
 
 Compilar todo:
 

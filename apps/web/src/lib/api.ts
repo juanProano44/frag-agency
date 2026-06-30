@@ -5,7 +5,7 @@ import type {
   ServiceItem,
 } from '../types/domain';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8080/api';
 
 async function parseJson<T>(response: Response): Promise<T> {
   if (!response.ok) {
