@@ -6,7 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
   app.enableCors({
-    origin: process.env.WEB_ORIGIN ?? 'http://localhost:5173',
+    origin: ['https://frag-agency-api.vercel.app'],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
 
@@ -19,7 +20,7 @@ async function bootstrap() {
   SwaggerModule.setup('frag-api-mailing', app, swaggerDocument);
 
   const port = Number(process.env.PORT ?? process.env.API_PORT ?? 8080);
-  await app.listen(port, '0.0.0.0');
+  await app.listen(process.env.PORT || process.env.API_PORT || 8080);;
 
   console.log(`Backend: http://localhost:${port}/api`);
   console.log(`Swagger: http://localhost:${port}/frag-api-mailing`);
