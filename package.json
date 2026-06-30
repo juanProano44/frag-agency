@@ -26,14 +26,12 @@
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "concurrently": "^10.0.3"
+    "concurrently": "^10.0.3",
+    "typescript": "^6.0.2"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",
     "@supabase/supabase-js": "^2.108.2",
     "resend": "^6.12.4"
-  },
-  "overrides": {
-    "typescript": "5.5.4"
   }
 }
