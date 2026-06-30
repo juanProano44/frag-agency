@@ -10,7 +10,9 @@
     "dev:backend": "npm run start:dev --workspace api",
     "dev:web": "npm run dev --workspace web",
     "dev:frontend": "npm run dev --workspace web",
-    "build": "npm run build --workspace @tic/shared && npm run build --workspace api && npm run build --workspace web",
+    "build": "npm run build --workspace @tic/shared && npm run build --workspace fragui && npm run build --workspace api && npm run build --workspace web",
+    "build:web": "npm run build --workspace @tic/shared && npm run build --workspace fragui && npm run build --workspace web",
+    "build:api": "npm run build --workspace @tic/shared && npm run build --workspace api",
     "lint": "npm run lint --workspace api && npm run lint --workspace web",
     "test": "npm run test --workspace api"
   },

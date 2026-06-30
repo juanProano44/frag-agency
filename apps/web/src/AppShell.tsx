@@ -486,8 +486,6 @@ function AppShell() {
   const [services, setServices] = useState<ServiceItem[]>([]);
   const [projects, setProjects] = useState<ProjectItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const { language } = useLocale();
-  const copy = siteCopy[language];
 
   useEffect(() => {
     async function bootstrap() {
